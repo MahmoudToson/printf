@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_printf: prints string and chars
+ *_printf:prints string and chars
  *
  *Description: prints anything
  *
@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 int char_counter = 0;
 va_list args_list;
 va_start(args_list, format);
-if (format == NULL)
+if (format == NULL || *format == '\0')
 return (-1);
 while (*format)
 {
@@ -45,8 +45,6 @@ if (*format == '%')
 write(1, format, 1);
 char_counter++;
 }
-if (*format == '\0')
-break;
 }
 format++;
 }
