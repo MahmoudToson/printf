@@ -1,12 +1,12 @@
 #include "main.h"
+
+
 /**
- *_printf:prints string and chars
+ *_printf - prints string and chars
  *
- *Description: prints anything
+ *@format: format string
  *
- * @format: format string
- *
- * Return: string and chars
+ *Return: string and chars
 */
 int _printf(const char *format, ...)
 {
